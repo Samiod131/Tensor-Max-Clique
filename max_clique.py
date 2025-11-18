@@ -1,9 +1,10 @@
-import numpy as np
-import time
-import networkx as nx
 import warnings
-import TN_libraries.TNTools as tnt
-import matplotlib.pyplot as plt
+import time
+
+import numpy as np
+import networkx as nx
+
+import TNTools as tnt
 
 
 '''
