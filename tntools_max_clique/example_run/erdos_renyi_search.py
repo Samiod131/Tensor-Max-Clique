@@ -158,7 +158,7 @@ def single_error_rate(n, p, chi=False, dmrg_chi=False, const=2, sample=100):
     return failures, max_bonds, max_entropy, alg_time
 
 
-def max_clique_full_search(sizes=[8], probs=[0.3], chis=[8],  sample=100, const=2, folder='./results/'):
+def max_clique_full_search(sizes=[8], probs=[0.3], chis=[8],  sample=100, const=2):
 
     # Header list for saving file
     header = ['const', 'size', 'state_chi', 'dmrg_chi', 'prob', 'sample_size', 'fail_rate', 'time_max_bond', 'std_max_bond', 'max_entrop', 'std_max_entrop',
@@ -194,8 +194,7 @@ def max_clique_full_search(sizes=[8], probs=[0.3], chis=[8],  sample=100, const=
                 # Writing parameters list to file
                 step_params = [const, size, chi, d_chi, p, sample, f_rate, t_max_bond, std_max_b,
                                max_entrop, std_max_entrop, avg_time, std_time]
-                save_to_file(step_params, 'results_s_chi_'+str(chi)+'_N_'+str(size)+'_dchi_'+str(d_chi)+'.dat',
-                             path=folder, header=header)
+                save_to_file(step_params, 'results_s_chi_'+str(chi)+'_N_'+str(size)+'_dchi_'+str(d_chi)+'.dat', header=header)
                 print('Failure rate: '+str(f_rate))
 
 
