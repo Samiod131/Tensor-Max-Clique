@@ -4,7 +4,7 @@ import time
 import numpy as np
 import networkx as nx
 
-import TNTools as tnt
+import tntools as tnt
 
 
 '''

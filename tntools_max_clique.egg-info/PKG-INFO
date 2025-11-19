@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: tntools_max_clique
+Version: 0.1.0
+Summary: Graph Max Clique finder toy library. Proof of concept for the TNTools library.
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: networkx>=2.5.0
+Requires-Dist: tntools>=0.0.0
+Dynamic: license-file
+
+# Tensor-Max-Clique
+An algorithm to find the maximum clique (equivalent to independent set) of a graph using tensor networks tools.This lib was developped as I was doing my master thesis. 
+
+https://usherbrooke.scholaris.ca/bitstreams/d8f0bc84-b9b5-4f92-a9dd-bd35ecb11836/download
+
+This is beginning to date and shows how my code came to improve over the years.  
+
+
+### Identified immediate needs for refactor
+
+-Split in clean submodules
+-Add proper docstring
+-Implement JIT compilation
+-Unit tests

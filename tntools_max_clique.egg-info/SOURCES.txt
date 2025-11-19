@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tntools_max_clique/__init__.py
+tntools_max_clique/tntools_max_clique.py
+tntools_max_clique.egg-info/PKG-INFO
+tntools_max_clique.egg-info/SOURCES.txt
+tntools_max_clique.egg-info/dependency_links.txt
+tntools_max_clique.egg-info/requires.txt
+tntools_max_clique.egg-info/top_level.txt
+tntools_max_clique/example_run/erdos_renyi_search.py
