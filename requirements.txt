@@ -1,3 +1,0 @@
-numpy>=1.19.0
-networkx>=2.5.0
-tntools>=1.0.0

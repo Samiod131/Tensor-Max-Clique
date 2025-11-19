@@ -4,7 +4,7 @@ import time
 import numpy as np
 import networkx as nx
 
-import max_clique as tnt_mc
+import tntools_max_clique as tnt_mc
 
 
 '''
