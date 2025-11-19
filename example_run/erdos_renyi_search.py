@@ -4,7 +4,7 @@ import time
 import numpy as np
 import networkx as nx
 
-import tnt_max_clique as mc
+import max_clique as tnt_mc
 
 
 '''
@@ -122,7 +122,7 @@ def single_max_clique_test(n, p, chi=False, dmrg_chi=False, const=2, debug=False
 
     tens_t = time.time()
     # Apply method
-    found_max, time_max_bond, max_entropy = mc.max_clique_solver(
+    found_max, time_max_bond, max_entropy = tnt_mc.max_clique_solver(
         adj_mat, max_chi=chi, dmrg_chi=dmrg_chi, const=const)
     tens_t = time.time()-tens_t
 

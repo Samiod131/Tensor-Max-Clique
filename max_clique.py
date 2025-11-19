@@ -11,8 +11,6 @@ import TNTools as tnt
 Max-Clique finder using TNTools MPS-MPO formalism.
 '''
 
-
-
 def initiate_clique_mps(n, p):
     '''
     The mps for the max clique problem solving. P is the exponent constant
@@ -28,13 +26,9 @@ def initiate_clique_mps(n, p):
 
     return mps
 
-
 '''
-################################################################################
 MPO generation and adjacency matrix
-################################################################################
 '''
-
 
 def _split_nand():
     s_nand = np.array([[1, 1, 1, 1], [1, 0, 0, 0]]).reshape(2, 2, 2)
@@ -147,11 +141,8 @@ def max_clique_constraints(bites_array, vertex_pos, adjacency=True):
 
 
 '''
-################################################################################
 Contractions and solving
-################################################################################
 '''
-
 
 def max_clique_solver(adj_matrix, const=2, max_chi=False, dmrg_chi=False, check_entropy=False):
     '''
